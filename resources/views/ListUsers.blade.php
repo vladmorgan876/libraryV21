@@ -3,7 +3,7 @@
     <div>
         <h2 style="text-align: center;color: lawngreen">Список зарегистрированных пользователей</h2>
         <div style="align-items: center">
-            <button class="btn btn-success" name="do_signup"><a href="{{route('AddUser')}}"
+            <button class="btn btn-success" name="do_signup"><a id="adduser" href="{{route('AddUser')}}"
                                                                 style="color: white;text-decoration: none">добавить
                     пользователя</a></button>
         </div>

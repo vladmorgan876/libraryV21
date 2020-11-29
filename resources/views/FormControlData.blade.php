@@ -17,7 +17,7 @@
             <form class="container" action="{{route('controldata')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <label>Выберите изображение обложки книги</label><br>
-                <input type="file" name="image"><br>
+                <input id="inputimage" type="file" name="image"><br>
                 <input type="text" class="form-control" name="name" id="name" placeholder="Введите название книги"><br>
                 <input type="text" class="form-control" name="author" id="author"
                        placeholder="Введите автора книги"><br>

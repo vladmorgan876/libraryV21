@@ -1962,18 +1962,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AuthComponent",
   data: function data() {
@@ -2011,7 +1999,7 @@ __webpack_require__.r(__webpack_exports__);
               window.location.href = "/home";
             }, 2000); // window.location.href = "home";
           } else {
-            _this.message2 = 'no work';
+            _this.message2 = 'Вы не прошли авторизацию';
           }
         });
       }
@@ -38386,6 +38374,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
+      _c("div", { staticStyle: { "text-align": "center", color: "red" } }, [
+        _vm._v("\n        " + _vm._s(_vm.message2) + "\n      ")
+      ]),
+      _vm._v(" "),
       _vm.errors === true
         ? _c(
             "div",
@@ -38507,15 +38499,8 @@ var render = function() {
                     ])
                   ]),
                   _vm._v(" "),
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _vm._m(1)
+                  _vm._m(0)
                 ]
-              ),
-              _vm._v(
-                "\n                        " +
-                  _vm._s(_vm.message2) +
-                  "\n                    "
               )
             ])
           ])
@@ -38525,31 +38510,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group row" }, [
-      _c("div", { staticClass: "col-md-6 offset-md-4" }, [
-        _c("div", { staticClass: "form-check" }, [
-          _c("input", {
-            staticClass: "form-check-input",
-            attrs: { type: "checkbox", name: "remember", id: "remember" }
-          }),
-          _vm._v(" "),
-          _c(
-            "label",
-            { staticClass: "form-check-label", attrs: { for: "remember" } },
-            [
-              _vm._v(
-                "\n                                            Запомнить меня\n                                        "
-              )
-            ]
-          )
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -51322,8 +51282,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! W:\domains\libraryV21\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! W:\domains\libraryV21\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! W:\domains\library\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! W:\domains\library\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

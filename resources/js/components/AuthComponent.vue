@@ -1,8 +1,9 @@
 <template>
     <div>
         <div class="container">
-
-
+          <div style="text-align: center; color: red"  >
+            {{ message2 }}
+          </div>
           <div style="text-align: center" class="alert alert-danger" v-if="errors===true">
               Пароль должен содержать минимум 8 знаков
           </div>
@@ -34,18 +35,6 @@
                                         <input id="password" type="password" class="form-control" name="password" v-model="password">
                                     </div>
                                 </div>
-
-                                <div class="form-group row">
-                                    <div class="col-md-6 offset-md-4">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="remember" id="remember">
-
-                                            <label class="form-check-label" for="remember">
-                                                Запомнить меня
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8 offset-md-4">
                                         <button type="submit" class="btn btn-primary">
@@ -54,7 +43,6 @@
                                     </div>
                                 </div>
                             </form>
-                            {{ message2 }}
                         </div>
                     </div>
                 </div>
@@ -74,8 +62,6 @@ export default {
             message2: '',
             errors:false,
             errors2:false,
-
-
         }
     },
     methods: {
@@ -100,7 +86,7 @@ export default {
                                 }, 2000);
                                 // window.location.href = "home";
                             } else {
-                                this.message2 = 'no work'
+                                this.message2 = 'Вы не прошли авторизацию'
                             }
                         }
                     )

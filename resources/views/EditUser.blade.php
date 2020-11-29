@@ -31,7 +31,7 @@
                 </div>
             @endif
             {{--------------------------------------------------------------------------------------------}}
-            <form class="container" action="{{route('NewUser')}}" method="post" enctype="multipart/form-data">
+            <form id="FormAddUser" class="container" action="{{route('NewUser')}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <input type="text" class="form-control" name="name" id="name" placeholder="имя нового пользователя"><br>
                 <input type="text" class="form-control" name="email" id="email"
